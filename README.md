@@ -1,4 +1,3 @@
-# AUTOMATIC-LED-CONTROL-USING-IR-SENSOR
 ##  AIM
 To design and implement a system using the **STM32 microcontroller** where an LED automatically turns ON or OFF based on the input from an **IR sensor**.
 
@@ -26,41 +25,46 @@ An **IR sensor** detects the presence of an object by emitting and receiving inf
 ### **Procedure**
 
 1. Open **STM32CubeIDE**.
-   <img width="1050" height="591" alt="image" src="https://github.com/user-attachments/assets/109135f6-e6f9-46f8-86e1-ecafa6170b01" />
+   ![WhatsApp Image 2025-11-08 at 09 16 44_ff146180](https://github.com/user-attachments/assets/55544408-9fdd-4ab1-abe4-77323d8fd3a5)
 
 2. Click **File → New STM32 Project**.
-   <img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/a5799efb-57e1-42b8-ba46-b09f32d86fcb" />
-<img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/edf33429-8eea-4857-a991-c2d7706fc787" />
+   ![WhatsApp Image 2025-11-08 at 09 17 26_a59e2d43](https://github.com/user-attachments/assets/cad527c5-aa6a-49c2-9e1d-6745df26ba8d)
+
+![WhatsApp Image 2025-11-08 at 09 22 57_4cf419bf](https://github.com/user-attachments/assets/431f4cb6-9a74-466e-835c-cd98d02f4dcb)
+
 
 3. Select the **target microcontroller** or board and click **Next**.
-   <img width="1110" height="624" alt="image" src="https://github.com/user-attachments/assets/f93d88b6-cd7f-49db-84de-351f9b116488" />
-
+  
+![WhatsApp Image 2025-11-08 at 20 23 18_3a962f49](https://github.com/user-attachments/assets/9b36ede0-60e5-46d8-b0f6-eab188bf4042)
 
 
 4. Name the project.
-   <img width="533" height="588" alt="image" src="https://github.com/user-attachments/assets/63de2bab-69d4-4cb9-8db6-1b57adff9878" />
 
-5. The corresponding `.ioc` file will be generated automatically.
-  <img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/8900847c-6745-43e2-9ecf-2e66877fdc49" />
+![WhatsApp Image 2025-11-08 at 20 24 25_34610cb9](https://github.com/user-attachments/assets/296eb2e4-3480-47c2-aa7c-5f667e2e6157)
 
-6. Configure the pins as **GPIO (Input/Output)**, **USART**, etc. as needed.
-   <img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/acc4f1c4-5e33-431b-8a76-3b102016baa6" />
-<img width="1110" height="624" alt="image" src="https://github.com/user-attachments/assets/b7abcd80-797d-451f-a7c3-23f303822423" />
+	
+6. The corresponding `.ioc` file will be generated automatically.
+  <img width="1919" height="1116" alt="image" src="https://github.com/user-attachments/assets/aa4a831a-a80c-48cb-8956-e09c8fe6de69" />
 
-7. Save the configuration (`Ctrl + S`) – the base C program will be generated automatically.
-   <img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/dbf4b205-5db9-4e9b-8150-94f441c8b116" />
- 
-8. Edit the generated main program as required.
-   <img width="1110" height="624" alt="image" src="https://github.com/user-attachments/assets/05b39060-35d6-420d-9f4d-8721439bd82f" />
-<img width="1104" height="621" alt="image" src="https://github.com/user-attachments/assets/2ec55709-a45f-4e6e-8738-6aa94138eab1" />
+7. Configure the pins as **GPIO (Input/Output)**, **USART**, etc. as needed.
+   ![WhatsApp Image 2025-11-08 at 20 31 07_a8c11ae9](https://github.com/user-attachments/assets/5a2fb5cd-6465-4d87-bb9d-2fa34f4c95e9)
 
-9. Click **Project → Build All**.
-    <img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/264cd0a8-3e96-4668-822e-838ecfafc527" />
+![WhatsApp Image 2025-11-08 at 20 32 02_5ff93ab7](https://github.com/user-attachments/assets/916ce282-01cc-4b36-b077-f736f1057e4a)
 
-10. Link the **HEX file** using the post-build process.
+8. Save the configuration (`Ctrl + S`) – the base C program will be generated automatically.
+   <img width="1916" height="1119" alt="image" src="https://github.com/user-attachments/assets/03517739-0730-4e68-9141-e2bad357ad98" />
+
+9. Edit the generated main program as required.
+   <img width="1919" height="1116" alt="image" src="https://github.com/user-attachments/assets/df9460ad-23ea-43b0-9131-03655d8fed9c" />
+<img width="1917" height="1142" alt="image" src="https://github.com/user-attachments/assets/0d9a90b2-0324-452e-aecf-a5bbdd3aa80d" />
+
+10. Click **Project → Build All**.
+   <img width="1872" height="1055" alt="image" src="https://github.com/user-attachments/assets/caf2fbc6-e8c0-42f5-9589-71c2344d73b6" />
+
+11. Link the **HEX file** using the post-build process.
     <img width="1053" height="465" alt="image" src="https://github.com/user-attachments/assets/478187a0-0ee6-4c50-9cac-c3b5ee18521b" />
 
-11. Click **Debug** and connect the **STM Nucleo Board**.
+12. Click **Debug** and connect the **STM Nucleo Board**.
     <img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/f72fff44-6073-4ae4-aa78-0da455df9af1" />
 
 13. Click **Run** to execute the program.
